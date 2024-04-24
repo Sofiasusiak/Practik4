@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор у 16-ковій системі</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="num1" name="num1" readonly>
+            <input type="text" id="operator" name="operator" readonly>
+            <input type="text" id="num2" name="num2" readonly>
+            <input type="text" id="result" name="result" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="appendValue('num1', '0')">0</button>
+            <button onclick="appendValue('num1', '1')">1</button>
+            <button onclick="appendValue('num1', '2')">2</button>
+            <button onclick="appendValue('num1', '3')">3</button>
+            <button onclick="appendValue('num1', '4')">4</button>
+            <button onclick="appendValue('num1', '5')">5</button>
+            <button onclick="appendValue('num1', '6')">6</button>
+            <button onclick="appendValue('num1', '7')">7</button>
+            <button onclick="appendValue('num1', '8')">8</button>
+            <button onclick="appendValue('num1', '9')">9</button>
+            <button onclick="appendValue('num1', 'A')">A</button>
+            <button onclick="appendValue('num1', 'B')">B</button>
+            <button onclick="appendValue('num1', 'C')">C</button>
+            <button onclick="appendValue('num1', 'D')">D</button>
+            <button onclick="appendValue('num1', 'E')">E</button>
+            <button onclick="appendValue('num1', 'F')">F</button>
+            <button onclick="setValue('operator', '+')">+</button>
+            <button onclick="setValue('operator', '-')">-</button>
+            <button onclick="setValue('operator', '*')">*</button>
+            <button onclick="setValue('operator', '/')">/</button>
+            <button onclick="appendValue('num2', '0')">0</button>
+            <button onclick="appendValue('num2', '1')">1</button>
+            <button onclick="appendValue('num2', '2')">2</button>
+            <button onclick="appendValue('num2', '3')">3</button>
+            <button onclick="appendValue('num2', '4')">4</button>
+            <button onclick="appendValue('num2', '5')">5</button>
+            <button onclick="appendValue('num2', '6')">6</button>
+            <button onclick="appendValue('num2', '7')">7</button>
+            <button onclick="appendValue('num2', '8')">8</button>
+            <button onclick="appendValue('num2', '9')">9</button>
+            <button onclick="appendValue('num2', 'A')">A</button>
+            <button onclick="appendValue('num2', 'B')">B</button>
+            <button onclick="appendValue('num2', 'C')">C</button>
+            <button onclick="appendValue('num2', 'D')">D</button>
+            <button onclick="appendValue('num2', 'E')">E</button>
+            <button onclick="appendValue('num2', 'F')">F</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearAll()">C</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
