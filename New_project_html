@@ -55,6 +55,7 @@
             <button onclick="clearAll()">C</button>
         </div>
     </div>
+<div><h1>New file</h1></div>
     <script src="calculator.js"></script>
 </body>
 </html>
